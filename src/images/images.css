@@ -1,0 +1,102 @@
+#images h2{
+    margin: 10rem 0rem 0rem 0rem;
+    font-size: 3rem;
+}
+
+#side{
+    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#side img{
+    height: 25rem;
+    width: 30rem;
+    gap: 2rem;
+    border: solid 0.5px black;
+}
+
+#aboutus_cont{
+    background-color: black;
+}
+
+#aboutus{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#letter{
+    background-color: black;
+}
+
+#aboutus_cont h2{
+    font-size: 3rem;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+#letter h3{
+    font-size: 3.5rem;
+    color: goldenrod;
+} 
+
+#letter p{
+    font-size: 1.7rem;
+    margin: 2rem 4rem;
+    font-weight: 500;
+}
+
+#letter button{
+    width: 6rem;
+    height: 2rem;
+    background-color: goldenrod;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+#letter button:hover{
+    background-color: goldenrod;
+    color: black;
+    border: solid 0.5px white;
+}
+
+#letter button:active{
+    transform: scale(0.9);
+}
+
+/* #collab_cont{
+    background-color: black;
+} */
+
+#collab{
+    display: flex;
+    place-items: center;
+}
+
+#collab_cont h2{
+    font-size: 3rem;
+}
+
+#collab_cont a{
+    text-decoration: none;
+    color: white
+}
+
+#collab img{
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: all 300ms ease-in;
+}
+
+#collab img:hover{
+    filter: grayscale(0);
+}

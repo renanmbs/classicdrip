@@ -1,0 +1,36 @@
+.full_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full_logo img{
+    max-width: 100%;
+    max-height: 100%;
+    animation: App-logo-spin 2s ease-in;
+}
+
+#front{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vw;
+}
+
+h1{
+    color: white;
+}
+
+/* 
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg) scale(1);
+    }
+  
+    to {
+      transform: rotate(360deg) scale(1);
+    }
+  } */
