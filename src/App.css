@@ -15,10 +15,37 @@
 
 #symbols{
   position: absolute;
-  top: 1.5rem;
+  top: 3rem;
   left: 1rem;
   color: goldenrod;
   font-size:2.5rem;
+}
+
+#symbols .email{
+  font-size:2.7rem;
+  transition: all 400ms ease-in;
+}
+
+#symbols .insta{
+  font-size:2.7rem;
+  transition: all 400ms ease-in;
+}
+
+#symbols .twitter{
+  font-size:2.7rem;
+  transition: all 400ms ease-in;
+}
+
+#symbols .twitter:hover{
+  color: #9782ac;
+}
+
+#symbols .insta:hover{
+  color: #c71669;
+}
+
+#symbols .email:hover{
+  color: #ff4142;
 }
 
 #symbols a{
@@ -76,11 +103,6 @@
 #info h1{
   font-size: 7rem;
   margin-top: 3rem;
-}
-
-#info h2{
-  font-style: italic;
-  font-size: 2rem;
 }
 
 /* 
