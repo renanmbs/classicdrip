@@ -1,6 +1,20 @@
 #images h2{
     margin: 10rem 0rem 0rem 0rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
+}
+
+#images hr{
+    width: 20%;
+    text-align: center;
+    margin: 5rem 0;
+    background-color: white;
+    border: solid transparent;
+}
+
+#hairline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #side{
@@ -51,6 +65,11 @@
     margin: 2rem 20rem;
     font-weight: 500;
     line-height: 1.5;
+}
+
+#letter a{
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -178,4 +197,104 @@ footer a:hover{
 .teddy{
     height: 5rem;
     width: 5rem;
+}
+
+@media only screen and (max-width:440px){
+    #info h3{
+        font-size: 1.2rem;
+    }
+
+    #images h2{
+        margin: 5rem 0rem 0rem 0rem;
+        font-size: 2.5rem;
+    }
+
+    #side img{
+        height: 15rem;
+        width: 15rem;
+        margin: 2rem 1rem;
+    }
+
+    #side{
+        margin: 1rem 0;
+    }
+
+    #images hr{
+        width: 50%;
+    }
+    
+    #aboutus{
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    #letter{
+        background-color: black;
+    }
+    
+    #aboutus_cont h2{
+        font-size: 2.5rem;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+
+    #letter h3{
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: goldenrod;
+    } 
+    
+    #letter p{
+        font-size: 1rem;
+        margin: 1rem 2rem 2rem 2rem;
+    }
+
+    #aboutus img{
+        height: 15rem;
+        width: 12rem;
+    }
+    
+    #letter button{
+        width: 6rem;
+        height: 2rem;
+        font-size: 1.1rem;
+        margin: 1rem 0 2rem 0;
+        color: black;
+    }
+
+    #collab img{
+        min-width: 0;
+        max-height: 40rem;
+        flex: 1 1 1rem;
+        transition: 0.5s;
+    }
+    
+    #collab img:hover{
+        flex: 1 1 22rem;
+    }
+
+    .overlay{
+        margin: 0.5rem 0.5rem;
+        padding: .8rem 0.8rem;
+        border-radius: 10px;
+    }
+    
+    .overlay h3{
+        font-size: 0.8rem !important;
+    }
+    
+    .overlay h2{
+        font-size: 1.5rem !important;
+    }
+
+    .overlay .insta{
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    footer{
+        background-color: #c71669;
+        min-height: 2vw;
+        font-size: 0.5rem;
+    }
 }

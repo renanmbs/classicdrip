@@ -13,27 +13,42 @@
   position: relative;
 }
 
-#symbols{
-  position: absolute;
-  top: 3rem;
-  left: 1rem;
+#container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+#symbols {
+  display: flex;
   color: goldenrod;
-  font-size:2.5rem;
+  font-size: 2.5rem;
 }
 
-#symbols .email{
-  font-size:2.7rem;
+#symbols .email,
+#symbols .insta,
+#symbols .twitter {
+  font-size: 2.7rem;
+  margin-right: 1rem;
   transition: all 400ms ease-in;
 }
 
-#symbols .insta{
-  font-size:2.7rem;
-  transition: all 400ms ease-in;
+#but_buy {
+  padding: 1rem 2rem;
 }
 
-#symbols .twitter{
-  font-size:2.7rem;
-  transition: all 400ms ease-in;
+#but_buy button {
+  height: 3rem;
+  width: 6rem;
+  border: solid 0.5px goldenrod;
+  background-color: transparent;
+  color: goldenrod;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  border-radius: 1px;
 }
 
 #symbols .twitter:hover{
@@ -51,25 +66,6 @@
 #symbols a{
   text-decoration: none;
   color: goldenrod;
-}
-
-#but_buy{
-  position: absolute;
-  padding: 1rem 2rem;
-  top: 1rem;
-  right: 1rem;
-}
-
-#but_buy button{
-  height: 3rem;
-  width: 6rem;
-  border: solid 0.5px goldenrod;
-  background-color: transparent;
-  color: goldenrod;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-  border-radius: 1px;
 }
 
 #but_buy button:hover{
@@ -105,13 +101,44 @@
   margin-top: 3rem;
 }
 
-/* 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0) ;
+@media only screen and (max-width:440px){
+
+  #symbols {
+    font-size: 1.5rem;
+  }
+  
+  #symbols .email,
+  #symbols .insta,
+  #symbols .twitter {
+    font-size: 1.8rem;
+    margin: 0 0.3rem;
+  }
+  
+  #but_buy {
+    padding: 1rem 1rem;
+  }
+  
+  #but_buy button {
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1rem;
   }
 
-  to {
-    transform: rotate(360deg);
+  #container {
+    padding: 0.5rem 0;
   }
-} */
+
+  #info{
+    margin-top: 150vw;
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  #info h1{
+    font-size: 3.5rem;
+    margin-top: 2rem;
+  }
+}

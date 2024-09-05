@@ -9,8 +9,12 @@ export const Images = () =>{
             <h3>Get Your Drip on</h3>
 
             <div id="images">
+                <div id="hairline">
+                    <hr/>
+                </div>
+
                 <h2>Products</h2>
-                <h4>We sell a variety of drip, including shirts, shorts...</h4>
+                {/* <h4>We sell a variety of drip, including shirts, shorts...</h4> */}
 
                 <div id="side">
                     <img src="/img/p5.jpg" alt="Shorts 1" />
