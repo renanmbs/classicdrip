@@ -4,13 +4,18 @@
 }
 
 .App {
-  background-color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+  background-color: black;
+  background-image: url("/public/img/back5.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #container {
@@ -19,6 +24,8 @@
   align-items: center;
   width: 100%;
   padding: 1rem 0;
+  position: sticky;
+  top: 0;
 }
 
 #symbols {
@@ -31,7 +38,7 @@
 #symbols .insta,
 #symbols .twitter {
   font-size: 2.7rem;
-  margin-right: 1rem;
+  margin: 0 1rem;
   transition: all 400ms ease-in;
 }
 
@@ -88,12 +95,13 @@
   width: 100%;
   min-height: 90vw;
   color: white;
-  background-image: url("/public/img/back.jpg");
+  background-image: url("/public/img/back2.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  background-color: black;
 }
 
 #info h1{

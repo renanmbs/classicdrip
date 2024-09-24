@@ -4,6 +4,7 @@
     align-items: center;
     animation: fadeOut 2s forwards;
     animation-timeline: scroll();
+    background-color: black;
 }
 
 .full_logo img{
@@ -11,6 +12,7 @@
     max-height: 100%;
     animation: fadeOut 2s forwards;
     animation-timeline: scroll();
+    z-index: 11;
 }
 
 #front{

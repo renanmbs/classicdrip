@@ -40,23 +40,23 @@ export const Logo = () => {
 
   return (
     <div id="images">
-    <div id="front">
-      <div className="full_logo">
-        <a
-          href="/"
-          aria-label="Homepage"
-          style={{
-            maxWidth: `${maxHeight}px`,
-            transform: `scale(${scale})`,
-            top: isFixed ? 0 : `${top}px`,
-            position: isFixed ? "fixed" : "absolute", 
-            transformOrigin: "top", 
-          }}
-        >
-          <img src="/img/logo-noback.png" alt="Classic Drip Logo" />
-        </a>
+      <div id="front">
+        <div className="full_logo">
+          <a
+            href="/"
+            aria-label="Homepage"
+            style={{
+              maxWidth: `${maxHeight}px`,
+              transform: `scale(${scale})`,
+              top: isFixed ? 0 : `${top}px`,
+              position: isFixed ? "fixed" : "absolute", 
+              transformOrigin: "top", 
+            }}
+          >
+            <img src="/img/logo-noback.png" alt="Classic Drip Logo" />
+          </a>
+        </div>
       </div>
-    </div>
     </div>
   );
 };

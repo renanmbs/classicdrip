@@ -17,10 +17,17 @@ export const Images = () =>{
                 {/* <h4>We sell a variety of drip, including shirts, shorts...</h4> */}
 
                 <div id="side">
-                    <img src="/img/p5.jpg" alt="Shorts 1" />
-                    <img src="/img/p7.jpg" alt="Shirt 1" />
-                    <img src="/img/p3.jpg" alt="Shirt 2" />
-                    <img src="/img/p2.jpg" alt="Shirt 4" />
+                    <img src="/img/products/shirt1.png" alt="Shirt 1" />
+                    <img src="/img/products/shirt3.png" alt="Shirt 1" />
+                    <img src="/img/products/shirt7.png" alt="Shirt 1" />
+                    <img src="/img/products/shirt2.png" alt="Shirt 1" />
+                    <img src="/img/products/shirt6.png" alt="Shirt 1" />
+                    <img src="/img/products/shirt5.png" alt="Shorts 1" />
+                    <img src="/img/products/shirt4.png" alt="Shorts 1" />
+                    
+                    <img src="/img/products/short1.png" alt="Shorts 1" />
+                    <img src="/img/products/short3.png" alt="Shorts 2" />
+
                 </div>
             </div>
 
@@ -40,6 +47,13 @@ export const Images = () =>{
                     </div>
                 </div>
             </div>
+
+            {/* <div>
+                <h2>Follow The Trend</h2>
+                <div>
+                    
+                </div>
+            </div> */}
 
             <div id="collab_cont">
                 <div className="overlay">
