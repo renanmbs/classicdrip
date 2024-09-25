@@ -157,9 +157,8 @@
   }
 
   .info{
-    /* margin-top: 60rem; */
     background-image: url("/public/img/back.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

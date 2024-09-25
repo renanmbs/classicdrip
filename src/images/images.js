@@ -1,37 +1,49 @@
 import React from "react";
 import "./images.css"
 import { FaInstagram } from "react-icons/fa";
+import { Carousel } from "../carousel/carousel";
 
 export const Images = () =>{
     return (
         <div className="info">
             <div className="info__container">
-            <h1>Classic Drip</h1>
-            <h3>Get Your Drip on</h3>
+                <h1>Classic Drip</h1>
+                <h3>Get Your Drip on</h3>
 
-            <div id="images">
-                <div id="hairline">
-                    <hr/>
-                </div>
+                <div id="images">
+                    <div id="hairline">
+                        <hr/>
+                    </div>
 
-                <h2>Products</h2>
-                {/* <h4>We sell a variety of drip, including shirts, shorts...</h4> */}
+                    <h2>Products</h2>
+                    {/* <h4>We sell a variety of drip, including shirts, shorts...</h4> */}
 
-                <div id="side">
-                    <img src="/img/products/shirt1.png" alt="Shirt 1" />
-                    <img src="/img/products/shirt3.png" alt="Shirt 1" />
-                    <img src="/img/products/shirt7.png" alt="Shirt 1" />
-                    <img src="/img/products/shirt2.png" alt="Shirt 1" />
-                    <img src="/img/products/shirt6.png" alt="Shirt 1" />
-                    <img src="/img/products/shirt5.png" alt="Shorts 1" />
-                    <img src="/img/products/shirt4.png" alt="Shorts 1" />
-                    
-                    <img src="/img/products/short1.png" alt="Shorts 1" />
-                    <img src="/img/products/short3.png" alt="Shorts 2" />
+                    <div id="side">
+                        <img src="/img/products/shirt1.png" alt="Shirt 1" />
+                        <img src="/img/products/shirt3.png" alt="Shirt 1" />
+                        <img src="/img/products/shirt7.png" alt="Shirt 1" />
+                        <img src="/img/products/shirt2.png" alt="Shirt 1" />
+                        <img src="/img/products/shirt6.png" alt="Shirt 1" />
+                        <img src="/img/products/shirt5.png" alt="Shorts 1" />
+                        <img src="/img/products/shirt4.png" alt="Shorts 1" />
+                        
+                        <img src="/img/products/short1.png" alt="Shorts 1" />
+                        <img src="/img/products/short3.png" alt="Shorts 2" />
 
+                    </div>
                 </div>
             </div>
+
+            <div id="trend">
+                <div id="tr_cont">
+                    <h2>Follow The Trend</h2>
+                </div>
+                
+                <div id="tr_img">
+                   <Carousel/>
+                </div>
             </div>
+
             <div id="aboutus_cont">
                 <h2>Our Story</h2>
                 <div id="aboutus">
@@ -48,13 +60,6 @@ export const Images = () =>{
                     </div>
                 </div>
             </div>
-
-            {/* <div>
-                <h2>Follow The Trend</h2>
-                <div>
-                    
-                </div>
-            </div> */}
 
             <div id="collab_cont">
                 <div className="overlay">
