@@ -27,13 +27,22 @@
 }
 
 
-#side img{
-    height: 25rem;
-    width: 30rem;
+#side img {
+    height: 20rem;
+    width: 25rem;
     margin: 2rem 5rem;
-    background-color: white;
-    border: solid 0.5px black;
+    background-color: #f9f9f9; /* Softer background */
+    border: solid 0.5px #ccc; /* Softer border color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+
+#side img:hover {
+    transform: scale(1.05); /* Slight scale-up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
 
 #aboutus_cont{
     background-color: black;
@@ -212,8 +221,8 @@ footer a:hover{
     }
 
     #side img{
-        height: 15rem;
-        width: 15rem;
+        height: 10rem;
+        width: 10rem;
         margin: 2rem 1rem;
     }
 
