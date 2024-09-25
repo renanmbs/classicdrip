@@ -4,18 +4,22 @@
 }
 
 .App {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+#banner{
   background-color: black;
   background-image: url("/public/img/back5.png");
-  background-attachment: fixed;
+  background-attachment: scroll, local;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
 }
 
 #container {
@@ -90,8 +94,10 @@
   animation: App-logo-spin 1s ;
 }
 
-#info{
-  margin-top: 40vw;
+.info{
+  padding: 1px 0;
+  overflow: hidden;
+  display: flow-root;
   width: 100%;
   min-height: 90vw;
   color: white;
@@ -109,6 +115,18 @@
 }
 
 @media only screen and (max-width:1024px){
+
+ 
+  #banner{
+    background-color: black;
+    background-image: url("/public/img/back5.png");
+    background-attachment: scroll, local;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+  }
 
   #symbols {
     font-size: 1.5rem;
@@ -138,13 +156,16 @@
     padding: 0.5rem 0;
   }
 
-  #info{
-    margin-top: 150vw;
+  .info{
+    /* margin-top: 60rem; */
+    background-image: url("/public/img/back.jpg");
     background-attachment: fixed;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    text-align: center;
+    padding: 1px 0;
+    overflow: hidden;
+    display: flow-root;
   }
 
   #info h1{

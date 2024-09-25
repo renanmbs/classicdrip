@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
 
+      <div id='banner'>
       <div id='container'>
         <div id='symbols'>
           <a href='https://www.instagram.com/classicdripllc/' target="_blank" rel="noopener noreferrer"><FaInstagram className='insta'/> </a>
@@ -28,6 +29,8 @@ function App() {
       
       <div id='logo_position'>
         <Logo />
+      </div>
+
       </div>
 
       <div id='info'>

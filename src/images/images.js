@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 export const Images = () =>{
     return (
         <div className="info">
+            <div className="info__container">
             <h1>Classic Drip</h1>
             <h3>Get Your Drip on</h3>
 
@@ -30,7 +31,7 @@ export const Images = () =>{
 
                 </div>
             </div>
-
+            </div>
             <div id="aboutus_cont">
                 <h2>Our Story</h2>
                 <div id="aboutus">
