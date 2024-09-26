@@ -1,7 +1,7 @@
 import React from "react";
 import "./images.css"
 import { FaInstagram } from "react-icons/fa";
-import { Carousel } from "../carousel/carousel";
+import { Carousels } from "../carousel/carousel";
 
 export const Images = () =>{
     return (
@@ -40,7 +40,7 @@ export const Images = () =>{
                 </div>
                 
                 <div id="tr_img">
-                   <Carousel/>
+                   <Carousels/>
                 </div>
             </div>
 

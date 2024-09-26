@@ -1,62 +1,44 @@
 import React from "react";
-import { useState, useEffect } from 'react';
-import "./carousel.css";
+import './carousel.css';
+import 'primereact/resources/primereact.min.css';           
+import 'primeicons/primeicons.css'; 
+import { Carousel } from 'primereact/carousel';
+import { FaInstagram } from "react-icons/fa";
 
-const img = [
-    '/img/famous/famous1.jpg','/img/famous/papiflaco.jpg',
-    '/img/famous/QRose.jpg','/img/famous/Skater1.jpg',
-    '/img/famous/teddy2.jpg'
-]
+const products = [
+    { id: 1, name: 'Teddy Swims', image: '/img/famous/teddy2.jpg', description: 'Popstar Artist', insta: 'https://www.instagram.com/teddyswims/' },
+    { id: 2, name: 'Duke Gomez', image: '/img/famous/famous1.jpg', description: 'Internet Personality', insta: 'https://www.instagram.com/dukegomez7/'},
+    { id: 3, name: 'Papi Flaco', image: 'img/famous/papiflaco.jpg', description: 'Musical Artist', insta: 'https://www.instagram.com/truepapiflaco/'  },
+    { id: 4, name: 'Quinton Rose', image: '/img/famous/QRose.jpg', description: 'Basketball Player', insta: 'https://www.instagram.com/qrose3/'  },
+    { id: 5, name: 'Skater 1', image: '/img/famous/Skater1.jpg', description: 'Skateboarder', insta: 'https://www.instagram.com/guy/'  },
+];
 
-const description = [
-    'Guy 1', 'Papi Flaco',
-    'Quinton Rose','Skater 1',
-    'Teddy Swims'
-]
+export const Carousels = () => {
+    const productTemplate = (product) => {
+        return (
+            <div className="product-item">
+                <img src={product.image} alt={product.name} />
+                <div className="product-detail">
+                    <h4>{product.name}</h4>
+                    <p>{product.description}</p>
+                    <a href={product.insta} target="_blank" rel="noopener noreferrer"><FaInstagram className='insta'/> </a>
+                </div>
+            </div>
+        );
+    };
 
-const description2 = [
-    'Guy 1 description', 'Musical Artist',
-    'Basketball Player for Rip City Remix','Skater 1',
-    'Pop Star Artist'
-]
+    return (
+        <div>
+            <Carousel 
+                value={products} 
+                itemTemplate={productTemplate} 
+                numVisible={1} 
+                numScroll={1}  
+                circular        
+                autoplayInterval={8000}
+                contentClassName="carousel-container"
+            />
+        </div>
+    );
+};
 
-const instagram = [
-    'https://www.instagram.com/guy1/', 'https://www.instagram.com/truepapiflaco/',
-    'https://www.instagram.com/qrose3/', 'https://www.instagram.com/guy1/',
-    'https://www.instagram.com/teddyswims/'
-]
-
-export const Carousel = () => {
-
-    // const [idx, setIndex] = useState('');
-    // const delay = 6000;
-
-    // useEffect(() =>{
-    //     const intervalId = setInterval(() => {
-    //         setIndex((prevIndex) => 
-    //             prevIndex === img.length - 1 ? 0 : prevIndex + 1
-    //         );
-    //     }, delay)
-
-    //     return () => clearInterval(intervalId);
-    // }, [])
-
-    // return (
-    //     <div class="holster">
-    //     <div class="container x mandatory-scroll-snapping" dir="ltr">
-    //         {img.map((src, index) => (
-    //             <img key={index} src={src} alt={`Image ${index + 1}`} className="snap-image" />
-    //         ))}
-    //         {description.map((des, index) => (
-    //             <p>{des}</p>
-    //         ))}
-    //         {description2.map((des2, index) => (
-    //              <p>{des2}</p>
-    //         ))}
-    //         {instagram.map((insta, index) => (
-    //             <a href={insta}>Instagram</a>
-    //         ))}
-    //     </div>
-    //     </div>
-    // );
-  };

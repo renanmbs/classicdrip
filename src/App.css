@@ -163,8 +163,9 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 1px 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     display: flow-root;
+    border: solid pink;
   }
 
   #info h1{
