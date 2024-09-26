@@ -1,10 +1,11 @@
 import React from "react";
 import { useState, useEffect } from 'react';
+import "./carousel.css";
 
 const img = [
-    '/img/famous1.jpg','/img/papi flaco.jpg',
-    'img/QRose.jpg','img/Skater1.jpg',
-    'img/swims.jpg'
+    '/img/famous/famous1.jpg','/img/famous/papiflaco.jpg',
+    '/img/famous/QRose.jpg','/img/famous/Skater1.jpg',
+    '/img/famous/teddy2.jpg'
 ]
 
 const description = [
@@ -27,8 +28,8 @@ const instagram = [
 
 export const Carousel = () => {
 
-    const [idx, setIndex] = useState('');
-    const delay = 3000;
+    // const [idx, setIndex] = useState('');
+    // const delay = 6000;
 
     // useEffect(() =>{
     //     const intervalId = setInterval(() => {
@@ -40,26 +41,22 @@ export const Carousel = () => {
     //     return () => clearInterval(intervalId);
     // }, [])
 
-    return (
-        
-        <div className="carousel">
-      {/* <img
-        src='/img/papi flaco.jpg'
-        alt={`Slide ${idx + 1}`}
-        className="carousel-image"
-      /> */}
-
-      <img src='/img/swims.jpg'/>
-
-      {/* <div className="carousel-dots">
-        {img.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === index ? 'active' : ''}`}
-            onClick={() => setIndex(index)} // Click to jump to slide
-          ></span>
-        ))}
-      </div> */}
-    </div>
-  );
-};
+    // return (
+    //     <div class="holster">
+    //     <div class="container x mandatory-scroll-snapping" dir="ltr">
+    //         {img.map((src, index) => (
+    //             <img key={index} src={src} alt={`Image ${index + 1}`} className="snap-image" />
+    //         ))}
+    //         {description.map((des, index) => (
+    //             <p>{des}</p>
+    //         ))}
+    //         {description2.map((des2, index) => (
+    //              <p>{des2}</p>
+    //         ))}
+    //         {instagram.map((insta, index) => (
+    //             <a href={insta}>Instagram</a>
+    //         ))}
+    //     </div>
+    //     </div>
+    // );
+  };
