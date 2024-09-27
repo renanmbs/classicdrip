@@ -41,6 +41,7 @@ export const Images = () =>{
                 
                 <div id="tr_img">
                    <Carousels/>
+                   {/* <img src="/img/famous/famous1.jpg"/> */}
                 </div>
             </div>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import './carousel.css';
-import 'primereact/resources/primereact.min.css';           
-import 'primeicons/primeicons.css'; 
+// import 'primereact/resources/primereact.min.css';           
+// import 'primeicons/primeicons.css'; 
 import { Carousel } from 'primereact/carousel';
 import { FaInstagram } from "react-icons/fa";
 
@@ -13,15 +13,35 @@ const products = [
     { id: 5, name: 'Skater 1', image: '/img/famous/Skater1.jpg', description: 'Skateboarder', insta: 'https://www.instagram.com/guy/'  },
 ];
 
+const responsiveOptions = [
+    {
+        breakpoint: '1024px',
+        numVisible: 1,
+        numScroll: 1
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 1,
+        numScroll: 1
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1,
+        numScroll: 1
+    }
+];
+
 export const Carousels = () => {
     const productTemplate = (product) => {
         return (
-            <div className="product-item">
-                <img src={product.image} alt={product.name} />
-                <div className="product-detail">
-                    <h4>{product.name}</h4>
-                    <p>{product.description}</p>
-                    <a href={product.insta} target="_blank" rel="noopener noreferrer"><FaInstagram className='insta'/> </a>
+            <div id="car_con">
+                <div className="product-item">
+                    <img src={product.image} alt={product.name} />
+                    <div className="product-detail">
+                        <h4>{product.name}</h4>
+                        <p>{product.description}</p>
+                        <a href={product.insta} target="_blank" rel="noopener noreferrer"><FaInstagram className='insta'/> </a>
+                    </div>
                 </div>
             </div>
         );
@@ -36,7 +56,11 @@ export const Carousels = () => {
                 numScroll={1}  
                 circular        
                 autoplayInterval={8000}
-                contentClassName="carousel-container"
+                responsiveOptions={responsiveOptions}
+                prevIcon="pi pi-chevron-left"   
+                nextIcon="pi pi-chevron-right"
+                showIndicators={false} 
+                showNavigators={false}
             />
         </div>
     );
