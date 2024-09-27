@@ -3,16 +3,17 @@
     box-sizing: border-box;
     scrollbar-width: none;
     z-index: 2;
-    padding: 1rem 1rem;
-    overflow: hidden;
-    width: 50%;
+    padding: 1rem 0rem;
     display: grid;
     place-items: center;
+    border: solid red;
 }
 
 #car_con{
     display: grid;
+    border: solid yellow;
     place-items: center;
+    overflow: hidden;
 }
 
 .product-item img {

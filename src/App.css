@@ -96,7 +96,6 @@
 
 .info{
   padding: 1px 0;
-  overflow: hidden;
   display: flow-root;
   width: 100%;
   min-height: 90vw;
@@ -163,7 +162,6 @@
     background-position: center;
     background-repeat: no-repeat;
     padding: 1px 0;
-    /* overflow: hidden; */
     display: flow-root;
   }
 
