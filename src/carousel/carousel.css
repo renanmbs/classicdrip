@@ -6,14 +6,11 @@
     padding: 1rem 0rem;
     display: grid;
     place-items: center;
-    border: solid red;
 }
 
 #car_con{
     display: grid;
-    border: solid yellow;
     place-items: center;
-    overflow: hidden;
 }
 
 .product-item img {
@@ -23,7 +20,6 @@
     height: 35rem;
     object-fit:cover;
     border: solid goldenrod;
-    overflow: hidden;
     margin: 0 1rem;
 }
 
@@ -68,23 +64,23 @@
 }
 
 @media only screen and (max-width:1024px){
-    /* .product-item {
-        border: solid red;
+    .product-item {
         padding: 1rem 0;
         margin: 0 0;
-        width: 10%;
+        overflow: hidden;
     }
 
     .product-item img {
-        height: 20rem;
-        border: solid pink; 
+        height: 25rem;
+        width: 15rem;
         margin: 0 0;
+        object-position: center;
+        object-fit: cover;
     }   
 
 
     .product-detail {
         margin: 0.5rem 0 0 0;
-        border: solid blue; 
     }
 
     .product-detail h4{
@@ -102,6 +98,13 @@
     .product-detail a{
         font-size: 2.1rem;
         margin: 0.5rem 0;
-    } */
+    }
+
+    .product-item img:hover {
+        border: solid transparent;
+        border-radius: 10px;
+        transform: scale(1.1);
+    }
+
 }
 
