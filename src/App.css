@@ -118,7 +118,7 @@
  
   #banner{
     background-color: black;
-    background-image: url("/public/img/back5.png");
+    background-image:none;
     background-attachment: scroll, local;
     background-size: cover;
     background-position: top;
@@ -156,10 +156,11 @@
   }
 
   .info{
-    background-image: url("/public/img/back.jpg");
+    background-image: url("/public/img/back8.jpg");
     background-attachment: scroll;
     background-size: cover;
-    background-position: center;
+    background-position: auto;
+    background-size: 150% 100%;
     background-repeat: no-repeat;
     padding: 1px 0;
     display: flow-root;

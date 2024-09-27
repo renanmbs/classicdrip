@@ -31,16 +31,16 @@
     height: 18rem;
     width: 18rem;
     margin: 2rem 3rem;
-    background-color: #f9f9f9; /* Softer background */
-    border: solid 0.5px #ccc; /* Softer border color */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    background-color: #f9f9f9; 
+    border: solid 0.5px #ccc; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
 #side img:hover {
-    transform: scale(1.05); /* Slight scale-up on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
