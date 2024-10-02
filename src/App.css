@@ -28,7 +28,8 @@
   align-items: center;
   width: 100%;
   padding: 0rem 0;
-  position: sticky;
+  position: fixed;
+  z-index: 99;
   top: 0;
 }
 
@@ -59,7 +60,8 @@
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
-  border-radius: 1px;
+  border-radius: 5px;
+  
 }
 
 #symbols .twitter:hover{

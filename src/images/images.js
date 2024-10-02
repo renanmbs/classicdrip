@@ -2,8 +2,33 @@ import React from "react";
 import "./images.css"
 import { FaInstagram } from "react-icons/fa";
 import { Carousels } from "../carousel/carousel";
+import { useState } from "react";
 
 export const Images = () =>{
+
+    const [seeMore, setSeeMore] = useState('0');
+    const [soon, setSoon] = useState('0');
+
+    const handleClick = () =>{
+        if(seeMore === '0'){
+            setSeeMore('1');
+        }
+        else{
+            setSeeMore('0');
+        }
+    }
+
+
+    const handleClickSoon = () =>{
+        if(soon === '0'){
+            setSoon('1');
+        }
+        else{
+            setSoon('0');
+        }
+    }
+
+
     return (
         <div className="info">
             <div className="info__container">
@@ -19,18 +44,34 @@ export const Images = () =>{
                     {/* <h4>We sell a variety of drip, including shirts, shorts...</h4> */}
 
                     <div id="side">
-                        <img src="/img/products/shirt1.png" alt="Shirt 1" />
-                        <img src="/img/products/shirt3.png" alt="Shirt 1" />
-                        <img src="/img/products/shirt7.png" alt="Shirt 1" />
-                        <img src="/img/products/shirt2.png" alt="Shirt 1" />
-                        <img src="/img/products/shirt6.png" alt="Shirt 1" />
-                        <img src="/img/products/shirt5.png" alt="Shorts 1" />
-                        <img src="/img/products/shirt4.png" alt="Shorts 1" />
+                        <button onClick={handleClickSoon} className="drop_soon"><img src="/img/products/shirt1.png" alt="Shirt 1" /></button>
+                        <a href="https://shopclassicdrip.com/products/teddy-and-bear" target="_blank" rel="noopener noreferrer" ><button onClick={handleClickSoon} className="drop_soon"><img src="/img/products/shirt3.png" alt="Shirt 2" /></button></a>
+                        <button onClick={handleClickSoon} className="drop_soon"><img src="/img/products/shirt7.png" alt="Shirt 3" /></button>
+                        <a href="https://shopclassicdrip.com/products/classic-ape-purple" target="_blank" rel="noopener noreferrer" ><img src="/img/products/shirt2.png" alt="Shirt 4" /></a>
+                        <a href="https://shopclassicdrip.com/products/drip-til-i-die" target="_blank" rel="noopener noreferrer"><img src="/img/products/shirt4.png" alt="Shirt 7" /></a>
+                        <a href="https://shopclassicdrip.com/products/black-mesh-shorts" target="_blank" rel="noopener noreferrer"><img src="/img/products/short3.png" alt="Shorts 2" /></a>
                         
-                        <img src="/img/products/short1.png" alt="Shorts 1" />
-                        <img src="/img/products/short3.png" alt="Shorts 2" />
+                        {
+                            seeMore === '1' ? 
+                            
+                            <div className="seeMore">
+                                 <img src="/img/products/shirt5.png" alt="Shirt 6" />
+                                 <a href="https://shopclassicdrip.com/products/classic-ape-khaki-copy" target="_blank" rel="noopener noreferrer" ><img src="/img/products/shirt6.png" alt="Shirt 7" /></a>
+                                 <a href="https://shopclassicdrip.com/products/deadly-drip" target="_blank" rel="noopener noreferrer" ><img src="/img/products/shirt8.png" alt="Shirt 8" /></a>
+                                 <a href="https://shopclassicdrip.com/products/yellow-mesh-shorts" target="_blank" rel="noopener noreferrer" ><img src="/img/products/short1.png" alt="Shorts 1" /></a>
+                                 <a href="https://shopclassicdrip.com/products/white-mesh-shorts" target="_blank" rel="noopener noreferrer" ><img src="/img/products/short4.png" alt="Shorts 2" /></a>
+                            </div>
 
+                            :
+
+                            null
+                        }
+                       
+                        <button onClick={handleClick} className="see_but">{seeMore === '0' ? 'See More Drip' : 'See Less Drip' }</button>
+
+            
                     </div>
+                    
                 </div>
             </div>
 
@@ -41,7 +82,6 @@ export const Images = () =>{
                 
                 <div id="tr_img">
                    <Carousels/>
-                   {/* <img src="/img/famous/famous1.jpg"/> */}
                 </div>
             </div>
 

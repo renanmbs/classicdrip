@@ -49,8 +49,9 @@
     font-size: 2.5rem;
     margin: 1rem 0;
     text-decoration: none;
-    color: #ff4142;
+    color: hsla(203, 69%, 72%, 0.989);
     transition: all 400ms ease-in-out;
+    font-weight: bolder;
 }
 
 .product-detail a:hover {
