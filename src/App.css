@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+html, body {
+  height: 100%; /* Ensure the body and html have height for percentage values to work */
+  margin: 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
@@ -119,8 +124,6 @@
 
  
   #banner{
-    background-color: black;
-    background-image:none;
     background-attachment: scroll, local;
     background-size: cover;
     background-position: top;
@@ -157,16 +160,19 @@
     padding: 0.5rem 0;
   }
 
-  .info{
-    background-image: url("/public/img/back.jpg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: auto;
-    background-repeat: no-repeat;
-    padding: 1px 0;
-    display: flow-root;
+  .info {
+    background-image: none;
     background-color: black;
-  }
+    background-attachment: scroll;
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    position: relative;
+    min-height: 100vh; /* Ensure it fills the entire viewport height */
+    width: 100%; /* Ensure it fills the full width of the viewport */
+}
 
   #info h1{
     font-size: 3.5rem;

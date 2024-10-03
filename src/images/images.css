@@ -111,6 +111,7 @@
     transition: all 200ms ease-in;
     font-style: italic;
     margin: 1rem 0;
+    color: black;
 }
 
 .see_but a{
@@ -243,16 +244,16 @@ footer a:hover{
     background-color: goldenrod;
     display: grid;
     place-content: center;
-    font-size: 3rem;
     font-style: italic;
 }
 
 #tr_cont h2{
+    font-size: 3rem;
     margin: 0 5rem;
 }
 
 #tr_img {
-    background-image: url("/public/img/back5.png");
+    background-image: url("/public/img/back.jpg");
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
@@ -293,6 +294,18 @@ footer a:hover{
 
     #side{
         margin: 1rem 0;
+    }
+
+    #tr_img::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        opacity: 0.8;
+        pointer-events: none;
     }
 
     #images hr{
@@ -402,15 +415,20 @@ footer a:hover{
         height: 100%;
     }
 
-    #tr_img::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-        pointer-events: none;
+    #tr_cont{
+        background-color: transparent;
+        display: grid;
+        place-content: center;
+        font-style: italic;
+        width: 100%;
+        border-top: solid goldenrod;
+        margin-top: 2rem;
+        padding-top: 2rem;
+    }
+    
+    #tr_cont h2{
+        font-size: 3rem;
+        margin: 0 2rem;
     }
     
 }
