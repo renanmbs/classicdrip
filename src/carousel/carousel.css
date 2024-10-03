@@ -47,7 +47,7 @@
 
 .product-detail a{
     font-size: 2.5rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     text-decoration: none;
     color: hsla(203, 69%, 72%, 0.989);
     transition: all 400ms ease-in-out;
@@ -89,16 +89,18 @@
         margin: 0.5rem 0;
         letter-spacing: 0.05rem;
     }
+
+    .insta{
+        margin: 1rem 0;
+    }
     
     .product-detail p{
         font-size: 1.8rem;
         margin: 0.5rem 0;
     }
     
-    
     .product-detail a{
         font-size: 2.1rem;
-        margin: 0.5rem 0;
     }
 
     .product-item img:hover {

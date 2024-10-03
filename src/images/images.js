@@ -33,7 +33,7 @@ export const Images = () =>{
         <div className="info">
             <div className="info__container">
                 <h1>Classic Drip</h1>
-                <h3>Get Your Drip on</h3>
+                <h3>You've Found The Drip</h3>
 
                 <div id="images">
                     <div id="hairline">
@@ -122,7 +122,7 @@ export const Images = () =>{
 
             <footer>
                 <div className="foot-text">
-                    <p>&copy; 2024 Your Classic Drip. All rights reserved.
+                    <p>&copy; 2024 Classic Drip. All rights reserved.
                     Developed by <a href="https://renans.netlify.app/" target="_blank" rel="noopener noreferrer">Renan Mougenot</a></p>
                 </div>
             </footer>

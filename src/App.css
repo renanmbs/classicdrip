@@ -3,9 +3,20 @@
   margin: 0;
 }
 
-html, body {
-  height: 100%; /* Ensure the body and html have height for percentage values to work */
-  margin: 0;
+h1,h2,h3{
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,h4{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
 }
 
 .App {
@@ -122,15 +133,6 @@ html, body {
 
 @media only screen and (max-width:1024px){
 
- 
-  #banner{
-    background-attachment: scroll, local;
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    width: 100%;
-  }
 
   #symbols {
     font-size: 1.5rem;
@@ -147,14 +149,14 @@ html, body {
     padding: 1rem 1rem;
   }
   
-  #but_buy button {
+  /* #but_buy button {
     height: 2.5rem;
     width: 5rem;
     font-size: 1rem;
     border: solid 0.5px goldenrod;
     background-color: transparent;
     color: goldenrod;
-  }
+  } */
 
   #container {
     padding: 0.5rem 0;
@@ -162,16 +164,15 @@ html, body {
 
   .info {
     background-image: none;
-    background-color: black;
+    background: linear-gradient(to bottom, #9782ac,#c71669);
     background-attachment: scroll;
-    background-size: cover; /* Ensures the image covers the container */
-    background-position: center; /* Centers the image */
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
     position: relative;
-    min-height: 100vh; /* Ensure it fills the entire viewport height */
-    width: 100%; /* Ensure it fills the full width of the viewport */
+    height: 100%;
 }
 
   #info h1{
