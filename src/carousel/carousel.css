@@ -6,6 +6,7 @@
     padding: 1rem 0rem;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 #car_con{

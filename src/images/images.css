@@ -73,9 +73,10 @@
 
 #letter p{
     font-size: 1.7rem;
-    margin: 2rem 10rem;
-    font-weight: 500;
+    margin: 2rem 6rem;
+    /* font-weight: 500; */
     line-height: 1.5;
+    font-weight: 350;
 }
 
 #letter a{
@@ -340,9 +341,8 @@ footer a:hover{
     
     #letter p{
         font-size: 1.1rem;
-        margin: 1rem 2rem 2rem 2rem;
+        margin: 1rem 1.5rem 2rem 1.5rem;
         word-spacing: 0.1rem;
-        /* font-weight: lighter; */
     }
 
     #aboutus img{
