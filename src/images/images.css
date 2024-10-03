@@ -420,15 +420,13 @@ footer a:hover{
         display: grid;
         place-content: center;
         font-style: italic;
-        width: 100%;
         border-top: solid goldenrod;
         margin-top: 2rem;
-        padding-top: 2rem;
     }
     
     #tr_cont h2{
-        font-size: 3rem;
-        margin: 0 2rem;
+        font-size: 2.5rem;
+        margin: 2rem;
     }
     
 }

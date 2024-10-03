@@ -102,9 +102,9 @@
     }
 
     .product-item img:hover {
-        border: solid transparent;
+        /* border: solid transparent; */
         border-radius: 10px;
-        transform: scale(1.1);
+        transform:none;
     }
 
 }
