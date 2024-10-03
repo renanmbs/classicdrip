@@ -66,10 +66,11 @@ export const Images = () =>{
 
                             null
                         }
-                       
-                        <button onClick={handleClick} className="see_but">{seeMore === '0' ? 'See More Drip' : 'See Less Drip' }</button>
-
             
+                    </div>
+
+                    <div>
+                            <button onClick={handleClick} className="see_but">{seeMore === '0' ? 'See More Drip' : 'See Less Drip' }</button>
                     </div>
                     
                 </div>

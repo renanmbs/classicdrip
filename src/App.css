@@ -158,14 +158,14 @@
   }
 
   .info{
-    background-image: url("/public/img/back8.jpg");
+    background-image: url("/public/img/back.jpg");
     background-attachment: scroll;
     background-size: cover;
     background-position: auto;
-    background-size: 150% 100%;
     background-repeat: no-repeat;
     padding: 1px 0;
     display: flow-root;
+    background-color: black;
   }
 
   #info h1{

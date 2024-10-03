@@ -110,7 +110,12 @@
     cursor: pointer;
     transition: all 200ms ease-in;
     font-style: italic;
-    margin: 0 50rem;
+    margin: 1rem 0;
+}
+
+.see_but a{
+    text-decoration: none;
+    color: black;
 }
 
 #letter button:hover,.see_but:hover{
@@ -230,7 +235,7 @@ footer a:hover{
 
 #trend{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     height: 50rem;
 }
 
@@ -247,7 +252,7 @@ footer a:hover{
 }
 
 #tr_img {
-    background-image: url("/public/img/back.jpg");
+    background-image: url("/public/img/back5.png");
     background-attachment: scroll;
     background-size: cover;
     background-position: center;
@@ -372,7 +377,7 @@ footer a:hover{
     
     #trend{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         height: 48rem;
     }
 
