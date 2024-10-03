@@ -26,7 +26,7 @@
 
 .product-item img:hover {
     border: solid white;
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 .product-detail {
@@ -57,7 +57,7 @@
 
 .product-detail a:hover {
     color: white;
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 
 .pi-chevron-left, .pi-chevron-right {
@@ -107,7 +107,6 @@
     .product-item img:hover {
         /* border: solid transparent; */
         border-radius: 10px;
-        transform:none;
     }
 
 }
