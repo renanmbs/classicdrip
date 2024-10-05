@@ -6,6 +6,7 @@
     animation-timeline: scroll();
     background-color: black;
     z-index: 11;
+    pointer-events: auto;
 }
 
 .full_logo img{
@@ -25,6 +26,11 @@
     align-items: center;
     min-height: 20vw;
     z-index: 11;
+}
+
+.full_logo a{
+    border: solid red;
+    pointer-events: auto !important;
 }
 
 
