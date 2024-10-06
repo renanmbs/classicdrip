@@ -25,8 +25,7 @@
 }
 
 .full_logo a{
-    border: solid red;
-    pointer-events: auto !important;
+    pointer-events: fill !important;
     z-index: 999;
 }
 
